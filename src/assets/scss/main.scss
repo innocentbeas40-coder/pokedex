@@ -1,0 +1,23 @@
+@use 'normalize';
+@use 'variables' as v;
+@use 'mixins' as m;
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: v.$font-primary;
+  background-color: v.$color-background;
+  color: v.$color-text;
+}
